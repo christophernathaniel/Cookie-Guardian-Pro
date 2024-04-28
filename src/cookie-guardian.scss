@@ -1,0 +1,252 @@
+
+
+.cookie-guardian {
+    font-family: sans-serif;
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    background: white;
+    width: 800px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 98%;
+    max-height: 100vh;
+    overflow: scroll;
+
+    * {
+        box-sizing: content-box;
+    }
+
+    .cookie-guardian__banner {
+        padding: 40px;
+        padding-top: 14px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e1e1e1;
+        
+        > div {
+            margin-top: 6px;
+            font-weight: bold;
+            line-height: 11px;
+            letter-spacing: -0.05em;
+            color: #333;
+        }
+
+        span {
+            font-size: 9px;
+            line-height: 9px;
+            letter-spacing: 0.1em;
+            color: #a1a1a1;
+        }
+    }
+
+    .cookie-guardian__desc {
+        padding: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.4em;
+        height: auto;
+        overflow: scroll;
+    }
+
+    .cookie-guardian__options {
+        position: relative;
+        background-color: #f1f1f1;
+        max-height: 300px;
+        overflow: scroll;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+        display: flex;
+        flex-wrap: wrap;
+
+        p {
+            font-size: 14px;
+            line-height: 1.4em;
+          
+        }
+
+        a {
+            color: #333;
+        }
+        
+       
+
+        .cookie-guardian__section {
+            padding: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e1e1e1;
+            width: calc(50% - 81px);
+           
+            b {
+                padding-bottom: 10px;
+                padding-top: 10px;
+                display: block;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            &:nth-child(2n+2) {
+                border-left: 1px solid #e1e1e1;
+            }
+            
+        }
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+
+        &:hover {
+            fill: #EA6B48;
+        }
+    }
+
+    input[type="checkbox"] {
+        width: 58px;
+        height: 32px;
+        display: block;
+        appearance: none;
+        display: block;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]:disabled {
+        cursor: not-allowed;
+    }
+
+    .cookie-guardian__section:has( input[type="checkbox"]:checked) {
+        background-color: #fafafa;
+    }
+
+    .cookie-guardian__section:has( input[type="checkbox"]:not(:checked)) {
+        color: #a1a1a1
+    }
+
+   
+    input[type="checkbox"]:checked + .checkbox-slider:before {
+        transform: translateX(26px);
+    }
+
+    input[type="checkbox"]:disabled + .checkbox-slider {
+        cursor: not-allowed;
+        background-color: #e1e1e1;
+    }
+
+    input[type="checkbox"] + .checkbox-slider {
+        background-color: #e1e1e1;
+    }
+
+    input[type="checkbox"]:checked:not(:disabled) + .checkbox-slider {
+        background-color: #EA6B48;
+    }
+    
+
+    input[type="checkbox"]:disabled + .checkbox-slider:before {
+        transform: translateX(26px);
+    }
+
+    .checkbox-slider {
+        background-color: #EA6B48;
+        pointer-events: none;
+        // background-color: #141414;
+        border-radius: 32px;
+        transform: translateY(-32px);
+        position: absolute;
+ 
+        transition: background-color .4s;
+        width: 58px;
+        height: 32px;
+        
+        
+        &:before {
+            background-color: #ffffff;
+            border-radius: 50%;
+            bottom: 4px;
+            content: "";
+            height: 24px;
+            left: 4px;
+            position: absolute;
+            transition: transform .4s;
+            width: 24px;
+            background-color: #ffffff;
+        }
+    }
+}
+
+
+.cookie-guardian__close {
+
+}
+
+.cookie-guardian__content {
+
+}
+
+.cookie-guardian__buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cookie-guardian__button {
+    padding: 20px;
+    background-color: #EA6B48;
+    appearance: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #f1f1f1;
+        color: #EA6B48;
+    }
+}
+
+.cookie-guardian__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 250, 250, 0.7);
+    z-index: 9998;
+}
+
+.cookie-button {
+    padding: 10px;
+    background-color: #EA6B48;
+    appearance: none;
+    border: none;
+    color: white;
+    border-radius: 100%;
+    width: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    fill: white;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+
+    &:hover {
+        background-color: #f1f1f1;
+        color: #EA6B48;
+    }
+}

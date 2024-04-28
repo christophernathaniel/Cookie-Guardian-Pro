@@ -1,0 +1,26 @@
+{
+    "name": "cookie-guardian",
+    "version": "1.1.5",
+    "author": "Christopher Nathaniel <hello@christophernathaniel.co.uk>",
+    "main": "webpack.common.js",
+    "scripts": {
+        "prod": "webpack --config webpack.prod.js",
+        "dev": "webpack --mode development --watch --config webpack.dev.js"
+    },
+    "dependencies": {
+        "browser-sync": "^3.0.2",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "css-loader": "^7.1.1",
+        "css-minimizer-webpack-plugin": "^6.0.0",
+        "mini-css-extract-plugin": "^2.9.0",
+        "node-sass": "^9.0.0",
+        "path-browserify": "^1.0.1",
+        "resolve-url-loader": "^5.0.0",
+        "sass-loader": "^14.2.1",
+        "webpack": "^5.91.0",
+        "webpack-merge": "^5.10.0"
+    },
+    "devDependencies": {
+        "webpack-cli": "^5.1.4"
+    }
+}

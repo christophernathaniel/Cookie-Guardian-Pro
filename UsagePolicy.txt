@@ -1,0 +1,16 @@
+Cookie Guardian uses cookies to enhance user experience and analyze website traffic. 
+By clicking "Accept", you agree to the site administrators policy. For more information 
+on how we use cookies and how you can manage them, please the sites Cookie Policy.
+
+Please note that Cookie Guardian provides the cookie popup functionality as a service,
+but the responsibility for compliance with legal regulations such as the General 
+Data Protection Regulation (GDPR) or other applicable laws lies with the website 
+administrator or owner. The website administrator or owner is responsible for ensuring 
+that the website complies with all relevant legal requirements, including obtaining appropriate 
+user consent for the use of cookies and providing necessary disclosures.
+
+If you have any questions or concerns regarding the use of cookies on this website, please 
+contact the website administrator or owner directly.
+
+Cookie Guardian is not liable for any legal consequences or liabilities arising from the use 
+of cookies on this website, including but not limited to GDPR violations or other legal infringements.

@@ -1,0 +1,28 @@
+// Example Cookie Guardian Usage:
+//
+// import cookieGuardian from 'cookie-guardian';
+//
+// const cookieGuardian = new CookieGuardian({
+//     desc: '',
+//     unclassifiedText: '',
+//     marketingText: '',
+//     statisticsText: '',
+//     preferencesText: '',
+//     requiredText: '',
+//     policyLink: '/privacy-policy',
+//     acceptText: 'Accept',
+//     declineText: 'Decline',
+//     stopAllCookies: false,
+//     preferences: () => {
+//         console.log('Preferences Enabled');
+//     },
+//     statistics: () => {
+//         console.log('Statistics Enabled');
+//     },
+//     marketing: () => {
+//         console.log('Marketing Enabled');
+//     },
+//     unclassified: () => {
+//         console.log('Unclassified Enabled');
+//     }
+// });
